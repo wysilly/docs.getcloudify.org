@@ -33,19 +33,13 @@ inputs:
 
   aws_access_key_id:
     type: string
-    default: ''
 
   aws_secret_access_key:
     type: string
-    default: ''
 
   aws_region_name:
     type: string
     default: 'eu-west-1'
-
-  ssh_key_filename:
-    type: string
-    default: ~/.ssh/my_keypair.pem
 
 dsl_definitions:
   aws_config: &AWS_CONFIG
@@ -73,7 +67,7 @@ node_templates:
     properties:
       aws_config: *AWS_CONFIG
       resource_id: 'my_keypair'
-      private_key_path: { get_input: ssh_key_filename }
+      private_key_path: ~/.ssh/my_keypair.pem
 
   my_security_group:
     type: cloudify.aws.nodes.SecurityGroup
