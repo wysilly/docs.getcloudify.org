@@ -154,3 +154,5 @@ policies:
     targets: [vm_with_elastic_ip]
 
 {{< /gsHighlight >}}
+
+Now that we have created a blueprint for and IP and VM to scale together Lets ...
