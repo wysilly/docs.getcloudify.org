@@ -54,7 +54,9 @@ node_templates:
 
 We can install this blueprint via: `cfy install -p blueprint.yaml -g`
 
-`Uploading blueprint blueprint.yaml to management server 54.221.249.43
+{{< gsHighlight  markdown  >}}
+
+Uploading blueprint blueprint.yaml to management server 54.221.249.43
  Blueprint uploaded. The blueprint's id is 3.5m1_F3FY7J
  Processing inputs source: inputs.yaml
  Creating new deployment from blueprint 3.5m1_F3FY7J at management server 54.221.249.43
@@ -66,8 +68,9 @@ We can install this blueprint via: `cfy install -p blueprint.yaml -g`
  .
  .
  2016-07-20T21:32:42 CFY <3.5m1_F3FY7J_3RDRW7> 'install' workflow execution succeeded
- Finished executing workflow install on deployment 3.5m1_F3FY7J_3RDRW7`
+ Finished executing workflow install on deployment 3.5m1_F3FY7J_3RDRW7
  
+{{< /gsHighlight >}}
 
 This blueprint can allow us to scale individual elements like so:
 
