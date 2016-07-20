@@ -9,12 +9,6 @@ weight: 1300
 
 Earlier we * [Initiated a VM on AWS](http://stage-docs.getcloudify.org/howto/user_guide/aws-vm/)
 
-Now we would like to give that VM an Elastic IP, and demonstrate how those 2 scale together.
-
-In order 
-
-The ability we want to show here, is having several dependent objects scale together.
-For our example, we will use an AWS instance and an Elastic IP.
 
 We will start with our blueprint from the previous section: [Starting an Instance in AWS]({{< relref "user_guide/aws-vm.md" >}})
 
@@ -54,7 +48,7 @@ node_templates:
               
 {{< /gsHighlight >}}
 
-This blueprint cal allow us to scale individual elements like so:
+This blueprint can allow us to scale individual elements like so:
 
 `cfy executions start -w scale -p "{'scalable_entity_name':'vm'}" -d deployment_name`
 
@@ -123,5 +117,5 @@ policies:
 
 {{< /gsHighlight >}}
 
-
 `cfy executions start -w scale -p "{'scalable_entity_name':'vm_with_elastic_ip'}" -d deployment_name`
+
