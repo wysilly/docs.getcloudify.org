@@ -143,3 +143,16 @@ policies:
 
 `cfy executions start -w scale -p "{'scalable_entity_name':'vm_with_elastic_ip'}" -d deployment_name`
 
+{{< gsHighlight  markdown  >}}
+
+2016-07-20T21:36:26 CFY <3.5m1_F3FY7J_3RDRW7> [vm_8hlfei.start] Sending task 'cloudify_agent.installer.operations.start'
+2016-07-20T21:36:26 CFY <3.5m1_F3FY7J_3RDRW7> [vm_8hlfei.start] Task started 'cloudify_agent.installer.operations.start'
+2016-07-20T21:36:34 CFY <3.5m1_F3FY7J_3RDRW7> [vm_8hlfei.start] Task succeeded 'cloudify_agent.installer.operations.start'
+2016-07-20T21:36:34 CFY <3.5m1_F3FY7J_3RDRW7> [vm_8hlfei->elastic_ip_y7wfop|establish] Sending task 'ec2.elasticip.associate'
+2016-07-20T21:36:34 CFY <3.5m1_F3FY7J_3RDRW7> [vm_8hlfei->elastic_ip_y7wfop|establish] Task started 'ec2.elasticip.associate'
+2016-07-20T21:36:35 CFY <3.5m1_F3FY7J_3RDRW7> [vm_8hlfei->elastic_ip_y7wfop|establish] Task succeeded 'ec2.elasticip.associate'
+2016-07-20T21:36:36 CFY <3.5m1_F3FY7J_3RDRW7> 'scale' workflow execution succeeded
+ 
+{{< /gsHighlight >}}
+
+as you can see now, the vm and ip scaled together.
