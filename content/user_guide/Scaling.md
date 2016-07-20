@@ -61,7 +61,13 @@ We can install this blueprint via: `cfy install -p blueprint.yaml -g`
  Deployment created. The deployment's id is 3.5m1_F3FY7J_3RDRW7
  Executing workflow 'install' on deployment '3.5m1_F3FY7J_3RDRW7' at management server 54.221.249.43 [timeout=900 seconds]
  Deployment environment creation is in progress...
- 2016-07-20T21:30:49 CFY <3.5m1_F3FY7J_3RDRW7> Starting 'create_deployment_environment' workflow execution`
+ 2016-07-20T21:30:49 CFY <3.5m1_F3FY7J_3RDRW7> Starting 'create_deployment_environment' workflow execution
+ .
+ .
+ .
+ 2016-07-20T21:32:42 CFY <3.5m1_F3FY7J_3RDRW7> 'install' workflow execution succeeded
+ Finished executing workflow install on deployment 3.5m1_F3FY7J_3RDRW7`
+ 
 
 This blueprint can allow us to scale individual elements like so:
 
