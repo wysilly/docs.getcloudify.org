@@ -7,8 +7,12 @@ weight: 1300
 
 ---
 
-Earlier we * [Initiated a VM on AWS](http://stage-docs.getcloudify.org/howto/user_guide/aws-vm/)
+{{% gsNote title="Prerequisites addition" %}}
+This requires an AWS based cloudify manager. 
+[For instructions on how to start a cloudify manager on aws please see here](http://stage-docs.getcloudify.org/howto/manager/bootstrap-ref-aws.md/)
+{{< /gsNote >}}
 
+Earlier we * [Initiated a VM on AWS][Initiated a VM on AWS](http://stage-docs.getcloudify.org/howto/user_guide/aws-vm/)
 
 We will start with our blueprint from the previous section: [Starting an Instance in AWS]({{< relref "user_guide/aws-vm.md" >}})
 
@@ -34,7 +38,7 @@ node_templates:
           to_port: 22
           cidr_ip: 0.0.0.0/0
   vm:
-    type: cloudify.aws.nodes.Instance
+    type: cloudify.aws.nodes.Instance``
     properties:
       agent_config:
         user: 'centos'
@@ -47,6 +51,17 @@ node_templates:
         target: security_group
               
 {{< /gsHighlight >}}
+
+We can install this blueprint via: `cfy install -p blueprint.yaml -g`
+
+`Uploading blueprint blueprint.yaml to management server 54.221.249.43
+ Blueprint uploaded. The blueprint's id is 3.5m1_F3FY7J
+ Processing inputs source: inputs.yaml
+ Creating new deployment from blueprint 3.5m1_F3FY7J at management server 54.221.249.43
+ Deployment created. The deployment's id is 3.5m1_F3FY7J_3RDRW7
+ Executing workflow 'install' on deployment '3.5m1_F3FY7J_3RDRW7' at management server 54.221.249.43 [timeout=900 seconds]
+ Deployment environment creation is in progress...
+ 2016-07-20T21:30:49 CFY <3.5m1_F3FY7J_3RDRW7> Starting 'create_deployment_environment' workflow execution`
 
 This blueprint can allow us to scale individual elements like so:
 
@@ -74,7 +89,7 @@ node_templates:
   elastic_ip:
     type: cloudify.aws.nodes.ElasticIP
     capabilities:
-      scalable:
+      scalable:```
         properties:
           default_instances: 1
 
