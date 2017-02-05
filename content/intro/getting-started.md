@@ -1,6 +1,6 @@
 ---
 layout: bt_wiki
-title: Installing an Example Blueprint
+title: Tutorial: Installing a Sample Blueprint
 category: Intro
 draft: false
 weight: 300
@@ -9,41 +9,41 @@ weight: 300
 {{% gsSummary %}}{{% /gsSummary %}}
 
 
-After [installing Cloudify]({{< relref "intro/installation.md" >}}), you can now deploy your first application.
+After [installing Cloudify]({{< relref "intro/installation.md" >}}), you can deploy your first application.
 
 Cloudify Applications are defined in what we call `blueprints`, which are a logical representation of an application.
-Blueprints can contain everything your application requires - from infrastructure elements, through configuration scripts to application elements, the way resources relate to one another, and much, much more.
+Blueprints can contain everything your application requires - from infrastructure elements, through configuration scripts to application elements, the way resources relate to one another, and much more.
 
-Let's deploy a blueprint which sets up a Python web server locally.
+In this tutorial, you will deploy a Blueprint to configure a Python web server locally.
 
 
-## Installing the example application
+## Installing the Sample Application
 
-We've already prepared the application for you and you can download it [here](https://github.com/cloudify-examples/simple-python-webserver-blueprint/archive/master.zip).
+1 Download the already-prepared application from [here](https://github.com/cloudify-examples/simple-python-webserver-blueprint/archive/master.zip).
 
-Once downloaded, extract the file to a directory and cd into it.
+2 Extract the file to a directory and navigate to that directory.
 
-Now let's prepare the environment for our application:
+3 Run the following to prepare the environment for the application:
 
-{{< gsHighlight  bash >}}
+```{{< gsHighlight  bash >}}
 $ cfy local init --blueprint-path blueprint.yaml --inputs '{"webserver_port": "8000", "host_ip":"localhost"}'
-...
+...```
 
-Initiated blueprint.yaml
-If you make changes to the blueprint, run 'cfy local init -p blueprint.yaml' again to apply them
+You have now initiated `blueprint.yaml`.
+If you make changes to the blueprint, run `cfy local init -p blueprint.yaml`  to apply the changes.
 
-...
-{{< /gsHighlight >}}
+```...
+{{< /gsHighlight >}}```
 
-You've now initialized the blueprint, provided it with some configuration and it is ready to be deployed.
+You have now initialized the blueprint and provided it with some configuration, so it is ready to be deployed.
 
-Cloudify provisions and manages applications using workflows. Workflows are predefined or user defined flows that perform certain actions on your application.
+Cloudify provisions and manages applications using workflows. Workflows are predefined or user-defined flows that perform certain actions on your application.
 
 The default workflow used by Cloudify to deploy an application is called the `install` workflow.
 
 To deploy the application, run:
 
-{{< gsHighlight  bash >}}
+``{{< gsHighlight  bash >}}
 $ cfy local execute --workflow install
 ...
 
@@ -62,32 +62,33 @@ $ cfy local execute --workflow install
 2015-11-21 10:56:05 CFY <local> 'install' workflow execution succeeded
 
 ...
-{{< /gsHighlight >}}
+{{< /gsHighlight >}}```
 
-If everything goes well, the `install` workflow will succeed and you'll be able to `curl http://localhost:8000` to see that your application is up. If you're running Windows, just go to `http://localhost:8000` in your browser to see your beautiful masterpiece.
+Assuming that the `install` workflow has deployed successfully, when you go to `curl http://localhost:8000`, you will see that your application is up. If you are in a Windows environment, go to `http://localhost:8000` in your browser to see your output.
 
-Cloudify is extensible and supports a variety of plugins. For instance, you might not have noticed, but when we installed our application, Cloudify used our home-grown script-plugin to execute a bunch of scripts and deploy the web server.
+Cloudify is extensible and supports a variety of plugins. For example, when we installed our application, Cloudify used our pre-defined Script plugin to execute a number of scripts and deploy the Web server.
 
-If we wanted to deploy our application on a server in a Cloud Provider of our choice - let's say, AWS, we could've used the AWS and Fabric (SSH) plugins to do it.
+To deploy our application on a server in a cloud provider, for example AWS, we could have used the AWS and Fabric (SSH) plugins to achieve that.
 
-Anyway, if a blueprint uses different plugins, they can be installed like so:
+In this tutorial, we are only using the Script plugin, which we already installed when we installed Cloudify. However, when a blueprint uses different plugins, they can be installed as follows:
 
-{{< gsHighlight  bash >}}
+```{{< gsHighlight  bash >}}
 $ cfy local install-plugins -p BLUEPRINT_PATH
-{{< /gsHighlight >}}
-
-In this instance, we're only using the script plugin, which we already installed when we installed Cloudify, so.. this will pretty much do nothing.
+{{< /gsHighlight >}}```
 
 
-## Retrieving some information about your deployed application
 
-Cloudify keeps the entire structure of your application in a `model`.
+## Retrieving Information about Your Deployed Application
 
-Before a blueprint is ready to be deployed, a `deployment` is created. A deployment is an instance of a blueprint. The `deployment` is also a part of the model. The deployment model contains every piece of information your application contains - for instance, information set during runtime like IP addresses to predefined configuration properties like application ports.
+Cloudify retains the entire structure of your application in a *model*.
 
-Let's printout some information about the deployment:
+Before a Blueprint is ready to be deployed, a *deployment* is created. A deployment is an instance of a Blueprint. The deployment is also a part of the model. The deployment model contains every piece of information that is contained in your application. For example, information set during run-time such as IP addresses, and predefined configuration properties such as application ports.
 
-{{< gsHighlight  bash >}}
+Now you will ouput some information about the application.
+
+Run the following:
+
+```{{< gsHighlight  bash >}}
 $ cfy local outputs
 ...
 
@@ -96,16 +97,16 @@ $ cfy local outputs
 }
 
 ...
-{{< /gsHighlight >}}
+{{< /gsHighlight >}}```
 
-This will show the outputs from the blueprint's deployment. So, in this instance, you can see that an output of the deployment is the endpoint of your server.
+This printout shows the outputs from the Blueprint's deployment. In this instance, you can see that an output of the deployment is the endpoint of your server.
 
 
-Each logical entity in your application defined within a blueprint is a called a `node`. After a deployment is created, each logical node becomes a set of one or more `node-instances`, which are - you guessed it, instances of that node. A node can have multiple node-instances - for instance, multiple virtual machines.
+Each logical entity in your application that is defined within a Blueprint is a called a *node*. After a deployment is created, each logical node becomes a set of one or more *node instances*, which are instances of that node. A node can have multiple node instances, for example in the case of there being multiple virtual machines.
 
-In this example, we have two nodes, each with one instance. Let's list the instances:
+In this example are two nodes, each with a single instance. Let's list the instances:
 
-{{< gsHighlight  bash >}}
+```{{< gsHighlight  bash >}}
 $ cfy local instances
 ...
 
@@ -141,16 +142,16 @@ $ cfy local instances
 ]
 
 ...
-{{< /gsHighlight >}}
+{{< /gsHighlight >}}```
 
-We can see all available information on our two instances like their names and their `relationships` to other nodes.
+You can see all the available information on the two instances, such as their names and their *relationships* to other nodes.
 
 
-## Uninstalling the application
+## Uninstalling the Application
 
-An `uninstall` workflow is also built-in to Cloudify, which allows you to uninstall a deployed blueprint.
+An `uninstall` workflow, which is also built in to Cloudify, anables you to uninstall a deployed Blueprint.
 
-Let's uninstall our application.
+You will now uninstall your application.
 
 {{< gsHighlight  bash >}}
 $ cfy local execute -w uninstall
