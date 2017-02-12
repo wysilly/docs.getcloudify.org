@@ -1,4 +1,4 @@
-test file line endings
-alfdjaslkd;jfla;
-Line three
-Line four
+This is a new line
+Starting
+From
+Here
