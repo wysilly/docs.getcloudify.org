@@ -9,18 +9,18 @@ weight: 90
 ---
 
 {{% gsSummary %}}{{% /gsSummary %}}
+#Logging In to and Out of the Cloudify Web Interface
 
-# Overview
-It is possible to bootstrap the manager with security configuration or without it.
+You can bootstrap Cloudify manager with or without a security configuration. 
 
-# Login Screen
-After bootstrapping the manager with security support, the UI will redirect the users to the Login screen.<br>
-The standard `Username` and `Password` are required as well as the option to check `Remember me`. <br>
+#####Logging In
+When you bootstrap Cloudify Manager with security support, users are redirected to the Login screen.<br>
+Users log in using their `Username` and `Password`. They can also select the `Remember me` checkbox, to automate subsequent logins. <br>
+The name of the logged-in user is displayed on the right of the menu bar of the screen.
 
 ![The Login Screen]({{< img "ui/ui-login-screen.png" >}})
 
-# Logout
-Once logged in, the user name is displayed on the top right of the screen, right next to the `Log Out` button. <br>
-The user can opt to logout anytime by simply clicking on the `Log Out` (as shown below). <br>
+##### Loggin Out
+To log out, the user clicks the `Log Out` button, as shown below. <br>
 
 ![The Logout Button]({{< img "ui/ui-logout-button.png" >}})

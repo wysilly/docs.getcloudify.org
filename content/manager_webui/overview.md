@@ -3,12 +3,12 @@ layout: bt_wiki
 title: Overview
 category: Manager
 draft: false
-abstract: Cloudify's Web Interface
+abstract: Cloudify Web Interface
 weight: 1
 ---
 
-Cloudify's Web Interface is provided as a commercial feature and requires a Cloudify Manager to run. It provides most features provided by the Command-Line Interface and more.
+The Cloudify Web interface is a Premium Customer feature that requires a Cloudify Manager to run. The Web interface provides most features available in the command-line interface, and more.
 
-On top of uploading blueprints, creating deployments and executing workflows, the Web UI provides metrics misualization, logs/events views, application and network topology visualization, and more..
+In addtion to enable the upload of Blueprints, creation of deployments and execution of workflows, the Web UI provides metrics visualization, logs/events views, application and network topology visualization, and more.
 
-The Web UI is aimed at providing a streamlined experience of managing your application and for analyzing it.
+The Web UI is designed to provide a streamlined experience for managing and analyzing your application.
