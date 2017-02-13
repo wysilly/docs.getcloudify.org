@@ -7,7 +7,7 @@ abstract: Cloudify's Command-Line Interface
 weight: 1
 ---
 
-Cloudify's Command-Line Interface is the default method for interacting with Cloudify and managing your applications. It allows you to execute workflows on your local machine as well as interact with a running [Cloudify Manager]({{< relref "manager/getting-started.md" >}}) (to ssh into a running Manager, upload blueprints, delete them, create deployments, execute workflows, retrieve events and more).
+The Cloudify command-line interface (CLI) is the default method for interacting with Cloudify Manager, to manage your applications. It enables you to execute workflows on your local machine, and to interact with a running [Cloudify Manager]({{< relref "manager/getting-started.md" >}}) via SSH to upload and delete Blueprints, create deployments, execute workflows, retrieve events, and more.
 
 Working locally means running workflows directly from the machine the CLI is installed on. Working with a manager means executing workflows from a manager instead.
 
@@ -21,7 +21,7 @@ If you haven't already [installed Cloudify]({{< relref "installation/from-packag
 
 # Usage
 
-The interface can be accessed by running the `cfy` command in your terminal. `cfy -h` will get you started:
+You can access the interface by running the `cfy` command in your terminal. Use `cfy -h` to display a list of all the available commands and their explanations.
 
 ```markdown
 $ cfy -h
@@ -76,17 +76,17 @@ Commands:
 ...
 ```
 
-Note that some features (such as viewing metric graphs and application topologies) are only available via the Web UI if running Cloudify manager.
+Note that some features (such as viewing metric graphs and application topologies) are only available via the Web UI if running Cloudify Manager.
 
 
 # Verbose Output
 
-The ``-v/--verbose`` flag is available for all commands. It sets the command verbosity level. At the moment, there are 4 verbosity levels:
+The ``-v/--verbose`` flag is available for all commands. It sets the command verbosity level. There are four verbosity levels:
 
-* Running a command without the verbose flag. (This is obviously the default).
-* Running a command with ``-v`` will print tracebacks where relevant, in addition to the normal output.
-* Running a command with ``-vv`` will, in addition, show ``DEBUG`` log statements of local/remote execution events.
-* Running a command with ``-vvv`` will, in addition, set all loggers declared in the `config <https://github.com/cloudify-cosmo/cloudify-cli/blob/3.4/cloudify_cli/resources/config.yaml>`_ file to debug mode.
+* Running a command without the verbose flag. (The default).
+* Running a command with ``-v`` prints tracebacks where relevant, in addition to the normal output.
+* Running a command with ``-vv`` in addition to the tracebacks, displays the ``DEBUG`` log statements of local/remote execution events.
+* Running a command with ``-vvv`` in addition to the tracebacks and debug log statements, sets all loggers declared in the `config <https://github.com/cloudify-cosmo/cloudify-cli/blob/3.4/cloudify_cli/resources/config.yaml>`_ file to debug mode.
 
 {{% gsNote title="Note" %}}
 ``--debug`` is equivalent to ``-vvv``
@@ -95,12 +95,12 @@ The ``-v/--verbose`` flag is available for all commands. It sets the command ver
 
 # Inputs and Parameters
 
-All commands that accept inputs or paramaters (e.g. `cfy executions start` or `cfy deployments create`) expect the value to represent a dictionary. Valid formats are:
+All commands that accept inputs or paramaters (e.g. `cfy executions start` or `cfy deployments create`) require the value to represent a dictionary. Valid formats are:
 
  * A path to the YAML file
  * A path to a directory containing one or more YAML files
- * A wildcard based path to one or more YAML files
- * A string formatted as JSON
+ * A wildcard-based path to one or more YAML files
+ * A string in JSON format
  * A string formatted as "key1=value1;key2=value2"
 
 {{% gsNote title="Note" %}}
@@ -110,14 +110,17 @@ Using the `key=value` method, you cannot currently pass non-string values
 
 # Configuration
 
-A directory named `.cloudify` is created By default .cloudify is *always* created under ~(Home directory).<br>This can be changed via an env variable(e.g. by `cfy init` or `cfy use`). 
+By default, a directory named `.cloudify` is created under ~(Home directory).<br>
+The location can be changed using an env variable(e.g. by `cfy init` or `cfy use`). 
 
-This directory contains a file named `config.yaml` which may be customized according to user preferences. What follows is details 
-regarding the different configurable parameters.
+The directory contains a file named `config.yaml` that you can customize according to your preferences. 
 
-## Colored Output
+##Configurable Parameters
+You can configure the parameters described in this section.
 
-Enable colored output of different `cfy` commands:
+### Colored Output
+
+Enables colored output of different `cfy` commands:
 
 ```
 colors: true
@@ -125,9 +128,9 @@ colors: true
 
 The default value is `false`.
 
-## Logging
+### Logging
 
-Specify the path of the log file `cfy` writes to:
+Specifies the path of the log file that `cfy` writes to:
 
 ```
 logging:
@@ -148,5 +151,5 @@ logging:
 The default sets `cloudify.cli.main` and `cloudify.rest_client.http` loggers' logging level to `info`.
 
 {{% gsNote title="Note" %}}
-The `.cloudify` directory may contain other files and directories that are used internally by `cfy`, those are not addressed in this section.
+The `.cloudify` directory might also contain other files and directories that are used internally by `cfy`, which are not addressed in this section.
 {{% /gsNote %}}
