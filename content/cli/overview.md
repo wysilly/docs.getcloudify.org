@@ -9,19 +9,19 @@ weight: 1
 
 The Cloudify command-line interface (CLI) is the default method for interacting with Cloudify Manager, to manage your applications. It enables you to execute workflows on your local machine, and to interact with a running [Cloudify Manager]({{< relref "manager/getting-started.md" >}}) via SSH to upload and delete Blueprints, create deployments, execute workflows, retrieve events, and more.
 
-Working locally means running workflows directly from the machine the CLI is installed on. Working with a manager means executing workflows from a manager instead.
+Working _locally_ refers to running workflows directly from the machine on which the CLI is installed. Working with an instance of Cloudify Manager refers to executing workflows directly from that Cloudify Manager instance.
 
-Using the CLI to control a manager adds additional functionality to the CLI which is not exposed in local mode such as ssh-ing into a running manager, downloading its logs, creating snapshots, uploading plugins and more...
+When you use the CLI to control a Cloudify Manager instance, additional commands appear in the CLI that are not available for use in local mode, for example ssh-ing into a running manager, downloading its logs, creating snapshots, uploading plugins and more...
 
 {{% gsNote title="Note" %}}
-Running commands not supported in local mode will show an error stating that they're only supported when using a manager. To use a manager, you can either run [cfy bootstrap]({{< relref "cli/bootstrap.md" >}}) to bootstrap a new manager or [cfy use]({{< relref "cli/use.md" >}}) to use an existing one.
+If you attempt to run a command that is not supported in local mode, an error message will be returned advising you that the command is only supported when using Cloudify Manager. To use a Cloudify Manager, you can either run [cfy bootstrap]({{< relref "cli/bootstrap.md" >}}) to bootstrap a new Cloudify Manager or [cfy use]({{< relref "cli/use.md" >}}) to use an existing one.
 {{% /gsNote %}}
 
 If you haven't already [installed Cloudify]({{< relref "installation/from-packages.md" >}}), now would be a good time to do so.
 
 # Usage
 
-You can access the interface by running the `cfy` command in your terminal. Use `cfy -h` to display a list of all the available commands and their explanations.
+You can access the CLI by running the `cfy` command in your terminal. Use `cfy -h` to display a list of all the available commands and their descriptions.
 
 ```markdown
 $ cfy -h
@@ -95,7 +95,7 @@ The ``-v/--verbose`` flag is available for all commands. It sets the command ver
 
 # Inputs and Parameters
 
-All commands that accept inputs or paramaters (e.g. `cfy executions start` or `cfy deployments create`) require the value to represent a dictionary. Valid formats are:
+For commands that accept inputs or parameters (for example, `cfy executions start` or `cfy deployments create`) the value must represent a dictionary. Valid formats are:
 
  * A path to the YAML file
  * A path to a directory containing one or more YAML files
@@ -104,21 +104,20 @@ All commands that accept inputs or paramaters (e.g. `cfy executions start` or `c
  * A string formatted as "key1=value1;key2=value2"
 
 {{% gsNote title="Note" %}}
-Using the `key=value` method, you cannot currently pass non-string values
+You cannot pass non-string values when using the `key=value` method.
 {{% /gsNote %}}
 
 
 # Configuration
 
-By default, a directory named `.cloudify` is created under ~(Home directory).<br>
-The location can be changed using an env variable(e.g. by `cfy init` or `cfy use`). 
+By default, a `.cloudify` directory is created under ~(Home directory). You can change the location using an `env` variable (for example, `cfy init` or `cfy use`). 
 
 The directory contains a file named `config.yaml` that you can customize according to your preferences. 
 
 ##Configurable Parameters
 You can configure the parameters described in this section.
 
-### Colored Output
+##### Colored Output
 
 Enables colored output of different `cfy` commands:
 
@@ -128,7 +127,7 @@ colors: true
 
 The default value is `false`.
 
-### Logging
+##### Logging
 
 Specifies the path of the log file that `cfy` writes to:
 
