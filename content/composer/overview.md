@@ -14,16 +14,17 @@ Cloudify Composer enables you to model topology for complex applications, and to
 Among its drag-and-drop components are platform and network items such as ‘compute’ node, ‘database’, ‘web server’, and so on. You can also add your own custom node type components, custom plugins and interfaces. 
 
 The generated output is a downloadable TGZ file containing: <br />
-- **blueprint.yaml** file that provides a TOSCA-based description for the application topology and its lifecycle management. The Blueprint contains operation mappings and resource references to all types of scripts and configuration templates.<br />
+- **blueprint.yaml** file that provides a TOSCA-based description for the application topology and its lifecycle management.  
+  The Blueprint contains operation mappings and resource references to all types of scripts and configuration templates.<br />
 - **Custom types and plugins** (if added by the user) and other resources required for the Blueprint.
 
 ##Logging In
-The first time that you use Cloudify Composer, you must supply a username and  a password. For version 2.3, use the following defaults:<br />
+The first time that you use Cloudify Composer, you must supply a username and a password. For version 2.3, use the following defaults:<br />
 **Username:** `composer` <br />
 **Password:** `composer`
 
 ##Workflow
-This workflow describes the main functions relating to creating a Blueprint. Typically, when you are using Cloudify Composer, your workflow will be similar to the one described here. Additional functions, such as importing Stencils and Blueprints, as so on are described after the primary functions related to creating a Blueprint.
+This workflow describes the main functions relating to creating a Blueprint. Typically, when you are using Cloudify Composer, your workflow will be similar to the one described here. Additional functions, such as importing Stencils and Blueprints, and so on, are described after the primary functions related to creating a Blueprint.
 
 ##Product Overview
 
