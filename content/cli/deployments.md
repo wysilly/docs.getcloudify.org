@@ -190,9 +190,9 @@ Listing all deployments...
 
 Deployments:
 +-----------------------------+-----------------------------+--------------------------+--------------------------+------------+----------------+------------+
-|              id             |         blueprint\_id        |        created\_at        |        updated\_at        | permission |  tenant\_name   | created\_by |
+|              id             |         blueprint&#95;_id        |        created&#95;_at        |        updated&#95;_at        | permission |  tenant&#95;_name   | created&#95;_by |
 +-----------------------------+-----------------------------+--------------------------+--------------------------+------------+----------------+------------+
-| cloudify-nodecellar-example | cloudify-nodecellar-example | 2017-03-30 10:14:40.556  | 2017-03-30 10:14:40.556  |  creator   | default\_tenant |   admin    |
+| cloudify-nodecellar-example | cloudify-nodecellar-example | 2017-03-30 10:14:40.556  | 2017-03-30 10:14:40.556  |  creator   | default&#95;_tenant |   admin    |
 +-----------------------------+-----------------------------+--------------------------+--------------------------+------------+----------------+------------+
 
 ...
@@ -221,11 +221,11 @@ $ cfy deployments outputs cloudify-nodecellar-example
 ...
 
 Retrieving inputs for deployment cloudify-nodecellar-example...
- - "agent\_private\_key\_path":
+ - "agent&#95;_private&#95;_key&#95;_path":
      Value: /key.pem
- - "agent\_user":
+ - "agent&#95;_user":
      Value: centos
- - "host\_ip":
+ - "host&#95;_ip":
      Value: 172.16.0.7
 
 ...
