@@ -53,8 +53,8 @@ $ cfy cluster join 10.239.0.148
 ...
 
 Joining the Cloudify Manager cluster: [u'10.239.0.148']
-2017-03-30T09:14:28 Started /opt/manager/env/bin/create_cluster_node.
-2017-03-30T09:14:28 Starting /opt/manager/env/bin/create_cluster_node...
+2017-03-30T09:14:28 Started /opt/manager/env/bin/create/_cluster/_node.
+2017-03-30T09:14:28 Starting /opt/manager/env/bin/create/_cluster/_node...
 .
 .
 .
@@ -91,16 +91,16 @@ HA Cluster nodes
 +-------------------------+--------------+--------+--------+
 |           name          |   host_ip    | master | online |
 +-------------------------+--------------+--------+--------+
-| cloudify_manager_UAFA8Y | 10.239.0.149 | False  |  True  |
-| cloudify_manager_W81PXP | 10.239.0.148 |  True  |  True  |
+| cloudify/_manager/_UAFA8Y | 10.239.0.149 | False  |  True  |
+| cloudify/_manager/_W81PXP | 10.239.0.148 |  True  |  True  |
 +-------------------------+--------------+--------+--------+
 
 ...
 
-$ cfy cluster nodes remove cloudify_manager_W81PXP
+$ cfy cluster nodes remove cloudify/_manager/_W81PXP
 ...
 
-Node cloudify_manager_W81PXP was removed successfully!
+Node cloudify/_manager/_W81PXP was removed successfully!
 
 ...
 ```
@@ -118,10 +118,10 @@ Specify the node that will be the active node (master) in the cluster.
 #### Example
 
 ```markdown
-$ cfy cluster set-active cloudify_manager_UAFA8Y
+$ cfy cluster set-active cloudif/y_manager/_UAFA8Y
 ...
 
-cloudify_manager_UAFA8Y set as the new active node
+cloudify/_manager/_UAFA8Y set as the new active node
 
 ...
 ```
@@ -166,8 +166,8 @@ Creating a new Cloudify Manager cluster
 .
 .
 .
-2017-03-30T08:55:32 commands.create_cluster_node:INFO: Starting filesystem replication
-2017-03-30T08:55:35 commands.create_cluster_node:INFO: HA Cluster configuration complete
+2017-03-30T08:55:32 commands.create/_cluster/_node:INFO: Starting filesystem replication
+2017-03-30T08:55:35 commands.create/_cluster/_node:INFO: HA Cluster configuration complete
 Cloudify Manager cluster started at 10.239.0.148.
 
 ...
