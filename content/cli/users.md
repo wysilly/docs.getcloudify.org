@@ -174,7 +174,7 @@ Listing all users...
 
 Users:
 +----------+--------+-------+---------+--------+--------------------------+
-| username | groups |  role | tenants | active |      last_login_at       |
+| username | groups |  role | tenants | active |      last\_login\_at       |
 +----------+--------+-------+---------+--------+--------------------------+
 |  admin   |        | admin |    1    |  True  | 2017-04-04 10:20:34.171  |
 |   assi   |        | admin |    1    |  True  |                          |
@@ -214,7 +214,7 @@ Getting info for user `assi2`...
 
 Requested user info:
 +----------+--------+------+---------+--------+---------------+
-| username | groups | role | tenants | active | last_login_at |
+| username | groups | role | tenants | active | last\_login\_at |
 +----------+--------+------+---------+--------+---------------+
 |  assi2   |   1    | user |         |  True  |               |
 +----------+--------+------+---------+--------+---------------+

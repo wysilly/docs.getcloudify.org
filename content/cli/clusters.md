@@ -118,10 +118,10 @@ Specify the node that will be the active node (master) in the cluster.
 #### Example
 
 ```markdown
-$ cfy cluster set-active cloudif/y_manager/_UAFA8Y
+$ cfy cluster set-active cloudify\_manager\_UAFA8Y
 ...
 
-cloudify/_manager/_UAFA8Y set as the new active node
+cloudify\_manager\_UAFA8Y set as the new active node
 
 ...
 ```
@@ -161,13 +161,13 @@ $ cfy cluster start
 ...
 
 Creating a new Cloudify Manager cluster
-2017-03-30T08:53:40 Started /opt/manager/env/bin/create_cluster_node.
-2017-03-30T08:53:40 Starting /opt/manager/env/bin/create_cluster_node...
+2017-03-30T08:53:40 Started /opt/manager/env/bin/create\_cluster\_node.
+2017-03-30T08:53:40 Starting /opt/manager/env/bin/create\_cluster\_node...
 .
 .
 .
-2017-03-30T08:55:32 commands.create/_cluster/_node:INFO: Starting filesystem replication
-2017-03-30T08:55:35 commands.create/_cluster/_node:INFO: HA Cluster configuration complete
+2017-03-30T08:55:32 commands.create\_cluster\_node:INFO: Starting filesystem replication
+2017-03-30T08:55:35 commands.create\_cluster\_node:INFO: HA Cluster configuration complete
 Cloudify Manager cluster started at 10.239.0.148.
 
 ...

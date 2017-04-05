@@ -67,13 +67,13 @@ Wagon (via the `--format` flag) enables you to create archives in both `tar.gz` 
 #### Example
 
 ```markdown
-$ cfy plugins upload cloudify_aws_plugin-1.4.4-py27-none-linux_x86_64-centos-Core.wgn
+$ cfy plugins upload cloudify\_aws\_plugin-1.4.4-py27-none-linux\_x86\_64-centos-Core.wgn
 ...
 
-Validating plugin cloudify_aws_plugin-1.4.4-py27-none-linux_x86_64-centos-Core.wgn...
+Validating plugin cloudify\_aws\_plugin-1.4.4-py27-none-linux\_x86\_64-centos-Core.wgn...
 Plugin validated successfully
-Uploading plugin cloudify_aws_plugin-1.4.4-py27-none-linux_x86_64-centos-Core.wgn...
- cloudify_aws_plug... |################################################| 100.0%
+Uploading plugin cloudify\_aws\_plugin-1.4.4-py27-none-linux\_x86\_64-centos-Core.wgn...
+ cloudify\_aws\_plug... |################################################| 100.0%
 Plugin uploaded. The plugin's id is e90b1a09-6b56-4a92-b9cd-5fc4ef32ab74
 
 ...
@@ -85,9 +85,9 @@ Plugin uploaded. The plugin's id is e90b1a09-6b56-4a92-b9cd-5fc4ef32ab74
 #### Usage 
 `cfy plugins download [OPTIONS] PLUGIN_ID`
 
-Download a plugin from the manager.
+Download a plugin from Cloudify Manager.
 
-`PLUGIN_ID` is the ID of the plugin to download.
+`PLUGIN_ID` The ID of the plugin to download.
 
 #### Optional flags
 
@@ -144,7 +144,7 @@ Plugin deleted
 `cfy plugins list [OPTIONS]`
 
 List all available plugins on Cloudify Manager.
-You can use this command to retrieve the IDs of the plugins you want to download or delete.
+You can use this command to retrieve the IDs of plugins you want to download or delete.
 
 #### Optional flags
 
@@ -167,9 +167,9 @@ Listing all plugins...
 
 Plugins:
 +--------------------------------------+---------------------+-----------------+--------------+--------------------+----------------------+--------------------------+------------+----------------+------------+
-|                  id                  |     package_name    | package_version | distribution | supported_platform | distribution_release |       uploaded_at        | permission |  tenant_name   | created_by |
+|                  id                  |     package\_name    | package\_version | distribution | supported\_platform | distribution\_release |       uploaded\_at        | permission |  tenant\_name   | created\_by |
 +--------------------------------------+---------------------+-----------------+--------------+--------------------+----------------------+--------------------------+------------+----------------+------------+
-| e90b1a09-6b56-4a92-b9cd-5fc4ef32ab74 | cloudify-aws-plugin |      1.4.4      |    centos    |    linux_x86_64    |         core         | 2017-04-04 07:02:54.526  |  creator   | default_tenant |   admin    |
+| e90b1a09-6b56-4a92-b9cd-5fc4ef32ab74 | cloudify-aws-plugin |      1.4.4      |    centos    |    linux_x86_64    |         core         | 2017-04-04 07:02:54.526  |  creator   | default\_tenant |   admin    |
 +--------------------------------------+---------------------+-----------------+--------------+--------------------+----------------------+--------------------------+------------+----------------+------------+
 
 ...
@@ -201,9 +201,9 @@ Retrieving plugin e90b1a09-6b56-4a92-b9cd-5fc4ef32ab74...
 
 Plugin:
 +--------------------------------------+---------------------+-----------------+--------------+--------------------+----------------------+--------------------------+------------+----------------+------------+
-|                  id                  |     package_name    | package_version | distribution | supported_platform | distribution_release |       uploaded_at        | permission |  tenant_name   | created_by |
+|                  id                  |     package\_name    | package\_version | distribution | supported\_platform | distribution\_release |       uploaded\_at        | permission |  tenant\_name   | created\_by |
 +--------------------------------------+---------------------+-----------------+--------------+--------------------+----------------------+--------------------------+------------+----------------+------------+
-| e90b1a09-6b56-4a92-b9cd-5fc4ef32ab74 | cloudify-aws-plugin |      1.4.4      |    centos    |    linux_x86_64    |         core         | 2017-04-04 07:02:54.526  |  creator   | default_tenant |   admin    |
+| e90b1a09-6b56-4a92-b9cd-5fc4ef32ab74 | cloudify-aws-plugin |      1.4.4      |    centos    |    linux\_x86\_64    |         core         | 2017-04-04 07:02:54.526  |  creator   | default\_tenant |   admin    |
 +--------------------------------------+---------------------+-----------------+--------------+--------------------+----------------------+--------------------------+------------+----------------+------------+
 
 ...
@@ -226,10 +226,10 @@ format.
 #### Example
 
 ```markdown
-$ cfy plugins validate cloudify_aws_plugin-1.4.4-py27-none-linux_x86_64-centos-Core.wgn
+$ cfy plugins validate cloudify\_aws\_plugin-1.4.4-py27-none-linux\_x86\_64-centos-Core.wgn
 ...
 
-Validating plugin cloudify_aws_plugin-1.4.4-py27-none-linux_x86_64-centos-Core.wgn...
+Validating plugin cloudify\_aws\_plugin-1.4.4-py27-none-linux\_x86\_64-centos-Core.wgn...
 Plugin validated successfully
 
 ...

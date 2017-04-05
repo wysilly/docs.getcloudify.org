@@ -36,8 +36,8 @@ Create a backup of all logs under a single archive and save it on the Cloudify M
 $ cfy logs backup
 ...
 
-Creating logs archive in manager: /tmp/cloudify-manager-logs_20170330T122201_10.239.0.208.tar.gz
-Backing up manager logs to /var/log/cloudify-manager-logs_20170330T122201_10.239.0.208.tar.gz
+Creating logs archive in manager: /tmp/cloudify-manager-logs\_20170330T122201\_10.239.0.208.tar.gz
+Backing up manager logs to /var/log/cloudify-manager-logs\_20170330T122201\_10.239.0.208.tar.gz
 
 ...
 ```
@@ -61,7 +61,7 @@ Download an archive containing all of the Cloudify Manager service logs.
 $ cfy logs download
 ...
 
-Creating logs archive in manager: /tmp/cloudify-manager-logs_20160623T070559_10.10.1.10.tar.gz
+Creating logs archive in manager: /tmp/cloudify-manager-logs\_20160623T070559\_10.10.1.10.tar.gz
 Downloading archive to: /home/nir0s/work/local-bootstrap-env
 Removing archive from manager...
 

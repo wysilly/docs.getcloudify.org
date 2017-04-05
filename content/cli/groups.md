@@ -43,11 +43,11 @@ Lists all groups for a deployment.
 #### Example
 
 ```markdown
-$ cfy groups list -d hello_world
+$ cfy groups list -d hello\_world
 ...
 
-Listing groups for deployment hello_world...
-No groups defined for deployment hello_world
+Listing groups for deployment hello\_world...
+No groups defined for deployment hello\_world
 
 ...
 ```

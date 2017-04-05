@@ -281,10 +281,10 @@ Listing all blueprints...
 
 Blueprints:
 +------------------------------+----------------------+---------------------------+--------------------------+--------------------------+------------+----------------+------------+
-|              id              |     description      |       main/_file_name      |        created/_at        |        updated/_at        | permission |  tenant/_name   | created/_by |
+|              id              |     description      |       main\_file_name      |        created\_at        |        updated\_at        | permission |  tenant\_name   | created/_by |
 +------------------------------+----------------------+---------------------------+--------------------------+--------------------------+------------+----------------+------------+
-| cloudify-nodecellar-example  | This Blueprint ins.. |   simple-blueprint.yaml   | 2017-04-04 05:52:32.634  | 2017-04-04 05:52:32.634  |  creator   | default_tenant |   admin    |
-| cloudify-hello-world-example | This blueprint ins.. | singlehost-blueprint.yaml | 2017-04-04 06:48:53.255  | 2017-04-04 06:48:53.255  |  creator   | default_tenant |   admin    |
+| cloudify-nodecellar-example  | This Blueprint ins.. |   simple-blueprint.yaml   | 2017-04-04 05:52:32.634  | 2017-04-04 05:52:32.634  |  creator   | default\_tenant |   admin    |
+| cloudify-hello-world-example | This blueprint ins.. | singlehost-blueprint.yaml | 2017-04-04 06:48:53.255  | 2017-04-04 06:48:53.255  |  creator   | default\_tenant |   admin    |
 +------------------------------+----------------------+---------------------------+--------------------------+--------------------------+------------+----------------+------------+
 
 ...
@@ -313,9 +313,9 @@ $ cfy blueprints get cloudify-nodecellar-example
 
 Blueprint:
 +-----------------------------+----------------------------------------------------+-----------------------+--------------------------+--------------------------+------------+----------------+------------+--------------+
-|              id             |                    description                     |     main/_file_name    |        created/_at        |        updated/_at        | permission |  tenant/_name   | created/_by | #deployments |
+|              id             |                    description                     |     main\_file_name    |        created\_at        |        updated\_at        | permission |  tenant\_name   | created\_by | #deployments |
 +-----------------------------+----------------------------------------------------+-----------------------+--------------------------+--------------------------+------------+----------------+------------+--------------+
-| cloudify-nodecellar-example | This Blueprint installs the nodecellar application | simple-blueprint.yaml | 2017-04-04 05:52:32.634  | 2017-04-04 05:52:32.634  |  creator   | default/_tenant |   admin    |      1       |
+| cloudify-nodecellar-example | This Blueprint installs the nodecellar application | simple-blueprint.yaml | 2017-04-04 05:52:32.634  | 2017-04-04 05:52:32.634  |  creator   | default\_tenant |   admin    |      1       |
 |                             |                on an existing host.                |                       |                          |                          |            |                |            |              |
 |                             |                                                    |                       |                          |                          |            |                |            |              |
 +-----------------------------+----------------------------------------------------+-----------------------+--------------------------+--------------------------+------------+----------------+------------+--------------+
@@ -357,9 +357,9 @@ Inputs:
 |          name          | type |   default   | description |
 +------------------------+------+-------------+-------------+
 |     webserver_port     |  -   |     8080    |      -      |
-|       agent/_user       |  -   |    centos   |      -      |
-|       server/_ip        |  -   | 172.16.0.49 |      -      |
-| agent/_private/_key/_path |  -   |   /key.pem  |      -      |
+|       agent\_user       |  -   |    centos   |      -      |
+|       server\_ip        |  -   | 172.16.0.49 |      -      |
+| agent\_private\_key\_path |  -   |   /key.pem  |      -      |
 +------------------------+------+-------------+-------------+
 
 ...

@@ -40,9 +40,9 @@ Listing all profiles...
 
 Profiles:
 +---------------+--------------+----------+-------------------------------------+----------+-----------+---------------+------------------+----------------+-----------------+
-|      name     |  manager_ip  | ssh_user |             ssh_key_path            | ssh_port | rest_port | rest_protocol | manager_username | manager_tenant | bootstrap_state |
+|      name     |  manager\_ip  | ssh\_user |             ssh\_key\_path            | ssh\_port | rest\_port | rest\_protocol | manager\_username | manager\_tenant | bootstrap\_state |
 +---------------+--------------+----------+-------------------------------------+----------+-----------+---------------+------------------+----------------+-----------------+
-| *10.239.2.241 | 10.239.2.241 |  centos  | /Users/user/rackspace/key.pem       |    22    |     80    |      http     |      admin       | default_tenant |     Complete    |
+| *10.239.2.241 | 10.239.2.241 |  centos  | /Users/user/rackspace/key.pem       |    22    |     80    |      http     |      admin       | default\_tenant |     Complete    |
 +---------------+--------------+----------+-------------------------------------+----------+-----------+---------------+------------------+----------------+-----------------+
 
 ...
@@ -64,9 +64,9 @@ $ cfy profiles show-current
 
 Active profile:
 +---------------+--------------+----------+-------------------------------------+----------+-----------+---------------+------------------+----------------+-----------------+
-|      name     |  manager_ip  | ssh_user |             ssh_key_path            | ssh_port | rest_port | rest_protocol | manager_username | manager_tenant | bootstrap_state |
+|      name     |  manager\_ip  | ssh\_user |             ssh\_key\_path            | ssh\_port | rest\_port | rest\_protocol | manager\_username | manager\_tenant | bootstrap_state |
 +---------------+--------------+----------+-------------------------------------+----------+-----------+---------------+------------------+----------------+-----------------+
-| *10.239.2.241 | 10.239.2.241 |  centos  | /Users/user/rackspace/key.pem       |    22    |     80    |      http     |      admin       | default_tenant |     Complete    |
+| *10.239.2.241 | 10.239.2.241 |  centos  | /Users/user/rackspace/key.pem       |    22    |     80    |      http     |      admin       | default\_tenant |     Complete    |
 +---------------+--------------+----------+-------------------------------------+----------+-----------+---------------+------------------+----------------+-----------------+
 
 ...
@@ -196,7 +196,7 @@ To stop using Cloudify Manager, you can run `cfy init -r`.
 #### Example
 
 ```markdown
-cfy profiles use 10.239.2.241 -t default_tenant -u admin -p admin
+cfy profiles use 10.239.2.241 -t default\_tenant -u admin -p admin
 ...
 
 Initializing local profile ...

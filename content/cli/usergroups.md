@@ -44,8 +44,8 @@ Create a new user group on the manager
 #### Optional flags
 
 *  `-l, --ldap-distinguished-name TEXT` - 
-                                  The ldap group's distinguished name. This
-                                  option is required when using ldap
+                                  The LDAP group's distinguished name. This
+                                  option is required when using LDAP.
 
 &nbsp;
 #### Example

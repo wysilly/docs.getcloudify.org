@@ -133,10 +133,10 @@ Listing all executions...
 
 Executions:
 +--------------------------------------+-------------------------------+------------+---------------+--------------------------+-------+------------+----------------+------------+
-|                  id                  |          workflow_id          |   status   | deployment_id |        created_at        | error | permission |  tenant_name   | created_by |
+|                  id                  |          workflow\_id          |   status   | deployment\_id |        created_at        | error | permission |  tenant\_name   | created\_by |
 +--------------------------------------+-------------------------------+------------+---------------+--------------------------+-------+------------+----------------+------------+
-| fa330011-1f33-4e6c-82cb-a4537e13c950 |            install            | terminated |   nodecellar  | 2017-03-28 07:47:04.733  |       |  creator   | default_tenant |   admin    |
-| 261ac6f8-c75d-4e28-9c62-646925cd326c |           uninstall           | terminated |   nodecellar  | 2017-03-28 07:55:02.582  |       |  creator   | default_tenant |   admin    |
+| fa330011-1f33-4e6c-82cb-a4537e13c950 |            install            | terminated |   nodecellar  | 2017-03-28 07:47:04.733  |       |  creator   | default\_tenant |   admin    |
+| 261ac6f8-c75d-4e28-9c62-646925cd326c |           uninstall           | terminated |   nodecellar  | 2017-03-28 07:55:02.582  |       |  creator   | default\_tenant |   admin    |
 +--------------------------------------+-------------------------------+------------+---------------+--------------------------+-------+------------+----------------+------------+
 
 ...
@@ -166,9 +166,9 @@ Retrieving execution f38ad989-d09e-4b68-b041-ac63aeacb9ae
 
 Execution:
 +--------------------------------------+-------------+------------+-----------------------------+--------------------------+-------+------------+----------------+------------+
-|                  id                  | workflow_id |   status   |        deployment_id        |        created_at        | error | permission |  tenant_name   | created_by |
+|                  id                  | workflow\_id |   status   |        deployment\_id        |        created\_at        | error | permission |  tenant\_name   | created\_by |
 +--------------------------------------+-------------+------------+-----------------------------+--------------------------+-------+------------+----------------+------------+
-| f38ad989-d09e-4b68-b041-ac63aeacb9ae |   install   | terminated | cloudify-nodecellar-example | 2017-03-29 11:34:11.014  |       |  creator   | default_tenant |   admin    |
+| f38ad989-d09e-4b68-b041-ac63aeacb9ae |   install   | terminated | cloudify-nodecellar-example | 2017-03-29 11:34:11.014  |       |  creator   | default\_tenant |   admin    |
 +--------------------------------------+-------------+------------+-----------------------------+--------------------------+-------+------------+----------------+------------+
 
 Execution Parameters:

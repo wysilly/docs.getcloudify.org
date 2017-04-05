@@ -75,7 +75,7 @@ previous state.
 $ cfy snapshots create
 ...
 
-Creating snapshot snapshot_XLHCNV...
+Creating snapshot snapshot\_XLHCNV...
 Started workflow execution. The execution's id is 2219928b-69fd-49f1-8982-c42da5f82a63
 
 ...
@@ -99,10 +99,10 @@ Delete a snapshot from Cloudify Manager.
 #### Example
 
 ```markdown
-$ cfy snapshots delete snapshot_XLHCNV
+$ cfy snapshots delete snapshot\_XLHCNV
 ...
 
-Deleting snapshot snapshot_XLHCNV...
+Deleting snapshot snapshot\_XLHCNV...
 Snapshot deleted successfully
 
 ...
@@ -126,12 +126,12 @@ Download a snapshot from Cloudify Manager.
 #### Example
 
 ```markdown
-$ cfy snapshots download snapshot_XLHCNV
+$ cfy snapshots download snapshot\_XLHCNV
 ,,,
 
-Downloading snapshot snapshot_XLHCNV...
- snapshot_XLHCNV |#####################################################| 100.0%
-Snapshot downloaded as snapshot_XLHCNV.zip
+Downloading snapshot snapshot\_XLHCNV...
+ snapshot\_XLHCNV |#####################################################| 100.0%
+Snapshot downloaded as snapshot\_XLHCNV.zip
 
 ...
 ```
@@ -165,9 +165,9 @@ Listing snapshots...
 
 Snapshots:
 +-----------------+--------------------------+---------+-------+------------+----------------+------------+
-|        id       |        created_at        |  status | error | permission |  tenant_name   | created_by |
+|        id       |        created\_at        |  status | error | permission |  tenant\_name   | created\_by |
 +-----------------+--------------------------+---------+-------+------------+----------------+------------+
-| snapshot_XLHCNV | 2017-04-04 09:33:39.315  | created |       |  creator   | default_tenant |   admin    |
+| snapshot\_XLHCNV | 2017-04-04 09:33:39.315  | created |       |  creator   | default\_tenant |   admin    |
 +-----------------+--------------------------+---------+-------+------------+----------------+------------+
 ```
 
@@ -225,10 +225,10 @@ nbsp;
 #### Example
 
 ```markdown
-$ cfy snapshots restore snapshot_CAMWZ5
+$ cfy snapshots restore snapshot\_CAMWZ5
 ...
 
-Restoring snapshot snapshot_XLHCNV...
+Restoring snapshot snapshot\_XLHCNV...
 Started workflow execution. The execution's id is 53921762-2b72-430b-b6fe-d6f1faced8e1
 
 ...
@@ -259,12 +259,12 @@ Upload a snapshot to Cloudify Manager.
 #### Example
 
 ```markdown
-$ cfy snapshots upload snapshot_XLHCNV.zip
+$ cfy snapshots upload snapshot\_XLHCNV.zip
 ...
 
-Uploading snapshot snapshot_XLHCNV.zip...
- snapshot_XLHCNV.zip |#################################################| 100.0%
-Snapshot uploaded. The snapshot's id is snapshot_76E7LB
+Uploading snapshot snapshot\_XLHCNV.zip...
+ snapshot\_XLHCNV.zip |#################################################| 100.0%
+Snapshot uploaded. The snapshot's id is snapshot\_76E7LB
 
 ...
 ```

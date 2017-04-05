@@ -29,7 +29,7 @@ These will work on each command:
 
 Create a deployment on the manager
 
-`DEPLOYMENT_ID` -       is the id of the deployment you'd like to create.
+`DEPLOYMENT_ID` -       The ID of the deployment to create.
 
 #### Optional flags
 
@@ -66,16 +66,16 @@ Deployment created. The deployment's id is simple-python-webserver-blueprint
 
 Update a specified deployment according to the specified blueprint.
 
-`DEPLOYMENT_ID` -       is the deployment's ID to update.
+`DEPLOYMENT_ID` -       The deployment's ID to update.
 
 
+####Mandatory flags
 *  `-p, --blueprint-path PATH` - 
-                        Is a mandatory flag.
+                        A mandatory flag.
 
 #### Optional flags
 
-*  `-p, --blueprint-path PATH` - 
-                        This is a mandatory flag.
+
 *  `-i, --inputs TEXT` -
                         Inputs for the deployment (Can be provided as
                         wildcard-based paths (*.yaml, /my_inputs/,
@@ -190,9 +190,9 @@ Listing all deployments...
 
 Deployments:
 +-----------------------------+-----------------------------+--------------------------+--------------------------+------------+----------------+------------+
-|              id             |         blueprint_id        |        created_at        |        updated_at        | permission |  tenant_name   | created_by |
+|              id             |         blueprint\_id        |        created\_at        |        updated\_at        | permission |  tenant\_name   | created\_by |
 +-----------------------------+-----------------------------+--------------------------+--------------------------+------------+----------------+------------+
-| cloudify-nodecellar-example | cloudify-nodecellar-example | 2017-03-30 10:14:40.556  | 2017-03-30 10:14:40.556  |  creator   | default_tenant |   admin    |
+| cloudify-nodecellar-example | cloudify-nodecellar-example | 2017-03-30 10:14:40.556  | 2017-03-30 10:14:40.556  |  creator   | default\_tenant |   admin    |
 +-----------------------------+-----------------------------+--------------------------+--------------------------+------------+----------------+------------+
 
 ...
@@ -221,11 +221,11 @@ $ cfy deployments outputs cloudify-nodecellar-example
 ...
 
 Retrieving inputs for deployment cloudify-nodecellar-example...
- - "agent_private_key_path":
+ - "agent\_private\_key\_path":
      Value: /key.pem
- - "agent_user":
+ - "agent\_user":
      Value: centos
- - "host_ip":
+ - "host\_ip":
      Value: 172.16.0.7
 
 ...

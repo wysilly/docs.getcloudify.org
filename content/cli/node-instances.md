@@ -56,14 +56,14 @@ Listing all instances...
 
 Node-instances:
 +------------------------+------------------------------+-------------+-----------------+---------+------------+----------------+------------+
-|           id           |        deployment_id         |   host_id   |     node_id     |  state  | permission |  tenant_name   | created_by |
+|           id           |        deployment\_id         |   host\_id   |     node\_id     |  state  | permission |  tenant\_name   | created\_by |
 +------------------------+------------------------------+-------------+-----------------+---------+------------+----------------+------------+
-|      host_gkxr6j       | cloudify-nodecellar-example  | host_gkxr6j |       host      | started |  creator   | default_tenant |   admin    |
-| http_web_server_mwtpct | cloudify-hello-world-example |  vm_qu2t7i  | http_web_server | started |  creator   | default_tenant |   admin    |
-|     mongod_nps479      | cloudify-nodecellar-example  | host_gkxr6j |      mongod     | started |  creator   | default_tenant |   admin    |
-|   nodecellar_gj0mj2    | cloudify-nodecellar-example  | host_gkxr6j |    nodecellar   | started |  creator   | default_tenant |   admin    |
-|     nodejs_gsy2zz      | cloudify-nodecellar-example  | host_gkxr6j |      nodejs     | started |  creator   | default_tenant |   admin    |
-|       vm_qu2t7i        | cloudify-hello-world-example |  vm_qu2t7i  |        vm       | started |  creator   | default_tenant |   admin    |
+|      host\_gkxr6j       | cloudify-nodecellar-example  | host\_gkxr6j |       host      | started |  creator   | default\_tenant |   admin    |
+| http\_web\_server\_mwtpct | cloudify-hello-world-example |  vm\_qu2t7i  | http\_web\_server | started |  creator   | default\_tenant |   admin    |
+|     mongod\_nps479      | cloudify-nodecellar-example  | host\_gkxr6j |      mongod     | started |  creator   | default\_tenant |   admin    |
+|   nodecellar\_gj0mj2    | cloudify-nodecellar-example  | host\_gkxr6j |    nodecellar   | started |  creator   | default\_tenant |   admin    |
+|     nodejs\_gsy2zz      | cloudify-nodecellar-example  | host\_gkxr6j |      nodejs     | started |  creator   | default\_tenant |   admin    |
+|       vm\_qu2t7i        | cloudify-hello-world-example |  vm\_qu2t7i  |        vm       | started |  creator   | default\_tenant |   admin    |
 +------------------------+------------------------------+-------------+-----------------+---------+------------+----------------+------------+
 
 ...
@@ -93,17 +93,17 @@ Retrieving node instance nodecellar_gj0mj2
 
 Node-instance:
 +-------------------+-----------------------------+-------------+------------+---------+------------+----------------+------------+
-|         id        |        deployment_id        |   host_id   |  node_id   |  state  | permission |  tenant_name   | created_by |
+|         id        |        deployment\_id        |   host\_id   |  node\_id   |  state  | permission |  tenant\_name   | created\_by |
 +-------------------+-----------------------------+-------------+------------+---------+------------+----------------+------------+
-| nodecellar_gj0mj2 | cloudify-nodecellar-example | host_gkxr6j | nodecellar | started |  creator   | default_tenant |   admin    |
+| nodecellar\_gj0mj2 | cloudify-nodecellar-example | host\_gkxr6j | nodecellar | started |  creator   | default\_tenant |   admin    |
 +-------------------+-----------------------------+-------------+------------+---------+------------+----------------+------------+
 
 Instance runtime properties:
-	mongo_port: 27017
-	nodejs_binaries_path: /tmp/68672f1b-b49a-4e58-ae6f-b2de63676e4f/nodejs/nodejs-binaries
+	mongo\_port: 27017
+	nodejs\_binaries\_path: /tmp/68672f1b-b49a-4e58-ae6f-b2de63676e4f/nodejs/nodejs-binaries
 	pid: 27816
-	nodecellar_source_path: /tmp/68672f1b-b49a-4e58-ae6f-b2de63676e4f/nodecellar/nodecellar-source
-	mongo_ip_address: localhost
+	nodecellar\_source\_path: /tmp/68672f1b-b49a-4e58-ae6f-b2de63676e4f/nodecellar/nodecellar-source
+	mongo\_ip_address: localhost
 
 ...
 ```

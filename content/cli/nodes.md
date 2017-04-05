@@ -54,14 +54,14 @@ Listing all nodes...
 
 Nodes:
 +-----------------+------------------------------+------------------------------+---------+----------------------------------------------+---------------------+-----------------------------+------------+----------------+------------+
-|        id       |        deployment_id         |         blueprint_id         | host_id |                     type                     | number_of_instances | planned_number_of_instances | permission |  tenant_name   | created_by |
+|        id       |        deployment\_id         |         blueprint\_id         | host\_id |                     type                     | number\_of_instances | planned\_number\_of\_instances | permission |  tenant\_name   | created\_by |
 +-----------------+------------------------------+------------------------------+---------+----------------------------------------------+---------------------+-----------------------------+------------+----------------+------------+
-| http_web_server | cloudify-hello-world-example | cloudify-hello-world-example |    vm   |           cloudify.nodes.WebServer           |          1          |              1              |  creator   | default_tenant |   admin    |
-|        vm       | cloudify-hello-world-example | cloudify-hello-world-example |    vm   |            cloudify.nodes.Compute            |          1          |              1              |  creator   | default_tenant |   admin    |
-|      mongod     | cloudify-nodecellar-example  | cloudify-nodecellar-example  |   host  |   nodecellar.nodes.MonitoredMongoDatabase    |          1          |              1              |  creator   | default_tenant |   admin    |
-|    nodecellar   | cloudify-nodecellar-example  | cloudify-nodecellar-example  |   host  | nodecellar.nodes.NodecellarApplicationModule |          1          |              1              |  creator   | default_tenant |   admin    |
-|       host      | cloudify-nodecellar-example  | cloudify-nodecellar-example  |   host  |       nodecellar.nodes.MonitoredServer       |          1          |              1              |  creator   | default_tenant |   admin    |
-|      nodejs     | cloudify-nodecellar-example  | cloudify-nodecellar-example  |   host  |        nodecellar.nodes.NodeJSServer         |          1          |              1              |  creator   | default_tenant |   admin    |
+| http\_web\_server | cloudify-hello-world-example | cloudify-hello-world-example |    vm   |           cloudify.nodes.WebServer           |          1          |              1              |  creator   | default\_tenant |   admin    |
+|        vm       | cloudify-hello-world-example | cloudify-hello-world-example |    vm   |            cloudify.nodes.Compute            |          1          |              1              |  creator   | default\_tenant |   admin    |
+|      mongod     | cloudify-nodecellar-example  | cloudify-nodecellar-example  |   host  |   nodecellar.nodes.MonitoredMongoDatabase    |          1          |              1              |  creator   | default\_tenant |   admin    |
+|    nodecellar   | cloudify-nodecellar-example  | cloudify-nodecellar-example  |   host  | nodecellar.nodes.NodecellarApplicationModule |          1          |              1              |  creator   | default\_tenant |   admin    |
+|       host      | cloudify-nodecellar-example  | cloudify-nodecellar-example  |   host  |       nodecellar.nodes.MonitoredServer       |          1          |              1              |  creator   | default\_tenant |   admin    |
+|      nodejs     | cloudify-nodecellar-example  | cloudify-nodecellar-example  |   host  |        nodecellar.nodes.NodeJSServer         |          1          |              1              |  creator   | default\_tenant |   admin    |
 +-----------------+------------------------------+------------------------------+---------+----------------------------------------------+---------------------+-----------------------------+------------+----------------+------------+
 
 ...
@@ -73,10 +73,10 @@ Listing nodes for deployment cloudify-hello-world-example...
 
 Nodes:
 +-----------------+------------------------------+------------------------------+---------+--------------------------+---------------------+-----------------------------+------------+----------------+------------+
-|        id       |        deployment_id         |         blueprint_id         | host_id |           type           | number_of_instances | planned_number_of_instances | permission |  tenant_name   | created_by |
+|        id       |        deployment\_id         |         blueprint\_id         | host\_id |           type           | number\_of\_instances | planned\_number\_of\_instances | permission |  tenant\_name   | created\_by |
 +-----------------+------------------------------+------------------------------+---------+--------------------------+---------------------+-----------------------------+------------+----------------+------------+
-| http_web_server | cloudify-hello-world-example | cloudify-hello-world-example |    vm   | cloudify.nodes.WebServer |          1          |              1              |  creator   | default_tenant |   admin    |
-|        vm       | cloudify-hello-world-example | cloudify-hello-world-example |    vm   |  cloudify.nodes.Compute  |          1          |              1              |  creator   | default_tenant |   admin    |
+| http\_web\_server | cloudify-hello-world-example | cloudify-hello-world-example |    vm   | cloudify.nodes.WebServer |          1          |              1              |  creator   | default\_tenant |   admin    |
+|        vm       | cloudify-hello-world-example | cloudify-hello-world-example |    vm   |  cloudify.nodes.Compute  |          1          |              1              |  creator   | default\_tenant |   admin    |
 +-----------------+------------------------------+------------------------------+---------+--------------------------+---------------------+-----------------------------+------------+----------------+------------+
 
 ...
@@ -111,9 +111,9 @@ Retrieving node nodecellar for deployment cloudify-nodecellar-example
 
 Node:
 +------------+-----------------------------+-----------------------------+---------+----------------------------------------------+---------------------+-----------------------------+------------+----------------+------------+
-|     id     |        deployment_id        |         blueprint_id        | host_id |                     type                     | number_of_instances | planned_number_of_instances | permission |  tenant_name   | created_by |
+|     id     |        deployment\_id        |         blueprint\_id        | host\_id |                     type                     | number\_of\_instances | planned\_number\_of\_instances | permission |  tenant\_name   | created\_by |
 +------------+-----------------------------+-----------------------------+---------+----------------------------------------------+---------------------+-----------------------------+------------+----------------+------------+
-| nodecellar | cloudify-nodecellar-example | cloudify-nodecellar-example |   host  | nodecellar.nodes.NodecellarApplicationModule |          1          |              1              |  creator   | default_tenant |   admin    |
+| nodecellar | cloudify-nodecellar-example | cloudify-nodecellar-example |   host  | nodecellar.nodes.NodecellarApplicationModule |          1          |              1              |  creator   | default\_tenant |   admin    |
 +------------+-----------------------------+-----------------------------+---------+----------------------------------------------+---------------------+-----------------------------+------------+----------------+------------+
 
 Node properties:

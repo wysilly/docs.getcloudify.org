@@ -85,13 +85,13 @@ $ cfy secrets get test
 
 Getting info for secret `test`...
 Requested secret info:
-created_by:     admin
+created\_by:     admin
 key:            test
 permission:     creator
-tenant_name:    default_tenant
-created_at:     2017-04-04 08:36:06.746 
-updated_at:     2017-04-04 08:39:49.926 
-value:          test_value2
+tenant\_name:    default\_tenant
+created\_at:     2017-04-04 08:36:06.746 
+updated\_at:     2017-04-04 08:39:49.926 
+value:          test\_value2
 
 ...
 ```
@@ -123,9 +123,9 @@ Listing all secrets...
 
 Secrets:
 +------+--------------------------+--------------------------+------------+----------------+------------+
-| key  |        created_at        |        updated_at        | permission |  tenant_name   | created_by |
+| key  |        created\_at        |        updated\_at        | permission |  tenant\_name   | created\_by |
 +------+--------------------------+--------------------------+------------+----------------+------------+
-| test | 2017-04-04 08:36:06.746  | 2017-04-04 08:36:06.746  |  creator   | default_tenant |   admin    |
+| test | 2017-04-04 08:36:06.746  | 2017-04-04 08:36:06.746  |  creator   | default\_tenant |   admin    |
 +------+--------------------------+--------------------------+------------+----------------+------------+
 
 ...
